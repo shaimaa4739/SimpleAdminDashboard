@@ -1,0 +1,78 @@
+.container{
+  margin-left:80px;
+  margin-top: 50px;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content{
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+h1{
+  margin-left:20px;
+  color: rgb(57, 57, 57);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.content .card{
+  overflow: auto;
+  height:100%;
+  padding: 35px;
+  color: rgb(57, 57, 57);
+  border-radius: 35px;
+}
+.content .card .card-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.content .card .card-content{
+  padding: 10px 0;
+}
+.content .card .card-content .card-icon{
+  float: right;
+  width: 30%;
+}
+.content .card .card-content .card-icon img{
+  width:100px;
+  border-bottom-left-radius:35px;
+  border-bottom-right-radius: 35px;
+}
+.content .card .card-content .card-data{
+  float: left;
+  width: 70%;
+}
+.content .card .card-content .card-data .data-content{
+  color: gray;
+  font-family: 'Montserrat', sans-serif;
+}
+.content .card .card-content .card-data .data{
+  padding-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 55px;
+  font-weight: 600;
+}
+.green{
+  background-color: #effcef;
+}
+.blue{
+  background-color: #e6f5f9;
+}
+.orang{
+  background-color: #ffefe2;
+}
+.pruppel{
+  background-color: #f4f6fa;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

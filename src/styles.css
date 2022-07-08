@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cairo&family=Cinzel:wght@500;700&family=Dancing+Script:wght@700&family=El+Messiri:wght@500&family=Kaushan+Script&family=Montserrat:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  /* position: relative; */
+  display:flex;
+  justify-content: flex-start;
+}
+

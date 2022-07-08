@@ -1,0 +1,70 @@
+<div class="container">
+  <h2>Add Employee</h2>
+  <div class="formCard">
+    <form #createEmployeeForm="ngForm" (ngSubmit)="createEmployee(createEmployeeForm.value)">
+
+      <!-- First Name -->
+      <div class="content">
+        <input type="text" #fname="ngModel" ngModel id="fname" name="fname" placeholder="First Name" required><br><br>
+      </div>
+
+      <!-- Last Name -->
+      <div class="content">
+        <input type="text" #lname="ngModel" ngModel id="lname" name="lname" placeholder="Last Name"><br><br>
+      </div>
+
+      <!-- Email -->
+      <div class="content">
+        <input type="email" #email="ngModel" ngModel id="email" name="email" placeholder="Email"><br><br>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="content">
+        <input type="text" #phone="ngModel" ngModel id="phone" name="phone" placeholder="Phone"><br><br>
+      </div>
+
+      <!-- DOB -->
+      <div class="content">
+        <label for="birthDate" id="bdate">Date of birth</label>
+        <input type="date" #birthDate="ngModel" ngModel id="birthDate" name="birthDate"><br><br>
+      </div>
+
+      <!-- Address -->
+      <div class="content">
+        <input type="text" #address="ngModel" ngModel id="address" name="address" placeholder="Address"><br><br>
+      </div>
+
+      <!-- Gender -->
+      <div class="content">
+        <div class="button-box">
+          <div class="btn" #selectedBtn></div>
+          <button type="button" #typeOne class="toggle-btn" (click)="fGender(typeOne,selectedBtn)">Female</button>
+          <button type="button" #typeTwo class="toggle-btn" (click)="mGender(typeTwo,selectedBtn)">Male</button>
+        </div>
+      </div>
+
+      <!-- Employee Status -->
+      <div class="content">
+        <label for="Status" class="activeStatus">Active Status</label>
+        <input type="radio" #Status="ngModel" ngModel id="active" name="Status" value="active">
+          <label for="active" class="activeStatus">Active</label>
+          <input type="radio" #Status="ngModel" ngModel id="inactive" name="Status" value="inactive">
+          <label for="inactive" class="activeStatus">Inactive</label><br><br>
+      </div>
+
+      <!-- Reset Form -->
+      <div class="content">
+        <input type="reset" id="reset" value="Cancel">
+      </div>
+
+      <!-- Save data -->
+      <div class="content">
+        <input type="submit" id="save" value="Save">
+      </div>
+
+    </form>
+  </div>
+  <!-- <div class="analysis">
+<app-dashboard></app-dashboard>
+  </div> -->
+</div>
